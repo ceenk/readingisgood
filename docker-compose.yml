@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  bookstore-api:
+    container_name: bookstore-api-container
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
